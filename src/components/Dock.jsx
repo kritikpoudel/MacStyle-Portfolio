@@ -3,8 +3,10 @@ import { Tooltip } from "react-tooltip";
 import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import useWindowStore from "#store/window";
 
 const Dock = () => {
+    const{openWindow,closeWindow,focusWindow,windows}=useWindowStore();
   const dockRef = useRef(null);
   useGSAP(() => {
     const dock = dockRef.current;
@@ -35,7 +37,7 @@ const Dock = () => {
         gsap.to(icon, {
           scale: 1,
           y: 0,
-          duretion: 0.3,
+          duration: 0.3,
           ease: "power2.out",
         })
       );
@@ -49,7 +51,21 @@ const Dock = () => {
 
     }
   },[]);
-  const toggleApp = (app) => {};
+  const toggleApp = (app) => {
+    if(!app.canOpen) return;
+    const window =windows[app.id];
+    if (!window){
+        console.error(`windows not found for app:${app.id}`)
+        return;
+    }
+
+    if(window.isOpen){
+        closeWindow(app.id);
+    }else{
+        openWindow(app.id)
+    }
+    console.log(windows); 
+  };
   return (
     <section id="dock">
       <div ref={dockRef} className="dock-container">
@@ -63,7 +79,7 @@ const Dock = () => {
               data-tooltip-content={name}
               data-tooltip-delay-show={150}
               disabled={!canOpen}
-              onClick={() => toggleApp(id, canOpen)}
+              onClick={() => toggleApp({ id, name, icon, canOpen })}
             >
               <img
                 src={`/images/${icon}`}
