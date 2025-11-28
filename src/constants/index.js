@@ -73,7 +73,33 @@ const dockApps = [
     canOpen: false,
   },
 ];
-export{navLinks,navIcons,dockApps}
+const techStack = [
+  {
+    category: "Frontend",
+    items: ["HTML" , "JavaScript", "React.js"],
+  },
+  {
+    category: "Mobile",
+    items: ["None"],
+  },
+  {
+    category: "Styling",
+    items: ["Tailwind CSS", "Sass", "CSS"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js"],
+  },
+  {
+    category: "Database",
+    items: ["MongoDB"],
+  },
+  {
+    category: "Dev Tools",
+    items: ["Git", "GitHub"],
+  },
+];
+export{navLinks,navIcons,dockApps,techStack}
 
 const INITIAL_Z_INDEX = 1000;
 
