@@ -99,7 +99,58 @@ const techStack = [
     items: ["Git", "GitHub"],
   },
 ];
-export{navLinks,navIcons,dockApps,techStack}
+const blogPosts = [
+  {
+    id: 1,
+    date: "Sep 2, 2025",
+    title:
+      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+    image: "/images/blog1.png",
+    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+  },
+  {
+    id: 2,
+    date: "Aug 28, 2025",
+    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+    image: "/images/blog2.png",
+    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+  },
+  {
+    id: 3,
+    date: "Aug 15, 2025",
+    title: "The Ultimate Guide to Mastering GSAP Animations",
+    image: "/images/blog3.png",
+    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+  },
+];
+
+const projectlist = [
+  {
+    id: 1,
+    date: "Sep 2, 2025",
+    title:
+      "A React-based web app to track cryptocurrency prices in real-time. View live prices, historical trends on interactive charts, check market rank, and convert between multiple currencies like USD, EUR,and NPR",
+    image: "/images/blog1.png",
+    link: "https://crypto-market-orcin.vercel.app/",
+  },
+  {
+    id: 2,
+    date: "Sep 8, 2025",
+    title:
+      "A sleek and interactive web application that lets users search for movies, and manage their favorite films.",
+    image: "/images/blog2.png",
+    link: "https://movie-application-chi-six.vercel.app/",
+  },
+  {
+    id: 3,
+    date: "Sep 10, 2025",
+    title:
+      "A simple and user-friendly weather application that fetches real-time weather data for any city using a weather API.",
+    image: "/images/blog3.png",
+    link: "https://weather-app-five-silk-41.vercel.app/",
+  },
+]
+export{navLinks,navIcons,dockApps,techStack,blogPosts,projectlist}
 
 const INITIAL_Z_INDEX = 1000;
 
