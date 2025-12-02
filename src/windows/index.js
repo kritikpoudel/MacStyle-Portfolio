@@ -1,3 +1,4 @@
 import Terminal from "./Terminal";
 import Safari from "./Safari";
-export{Terminal,Safari}
+import Contact from "./Contact";
+export{Terminal,Safari,Contact}

@@ -150,7 +150,46 @@ const projectlist = [
     link: "https://weather-app-five-silk-41.vercel.app/",
   },
 ]
-export{navLinks,navIcons,dockApps,techStack,blogPosts,projectlist}
+const socials = [
+  {
+    id: 1,
+    text: "Github",
+    icon: "/icons/github.svg",
+    bg: "#333333",
+    link: "https://github.com/kritikpoudel",
+  },
+  {
+    id: 2,
+    text: "LinkedIn",
+    icon: "/icons/linkedin.svg",
+    bg: "#0077b5",
+    link: "https://www.linkedin.com/in/kritikpoudel/",
+  },
+  {
+    id: 3,
+    text: "Instagram",
+    icon: "/icons/instagram.svg",
+    bg: "#E1306C",
+    link: "https://www.instagram.com/kritikpoudel/",
+  },
+  {
+    id: 4,
+    text: "Facebook",
+    icon: "/icons/facebook.svg",
+    bg: "#1877f2",
+    link: "https://www.facebook.com/kritikpoudel0/",
+  },
+  {
+    id: 5,
+    text: "Platform",
+    icon: "/icons/atom.svg",
+    bg: "#4bcb63",
+    link: "https://kritikpoudel.com.np/",
+  },
+
+];
+
+export{navLinks,navIcons,dockApps,techStack,blogPosts,projectlist,socials}
 
 const INITIAL_Z_INDEX = 1000;
 
