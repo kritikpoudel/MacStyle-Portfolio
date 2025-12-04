@@ -76,7 +76,7 @@ const dockApps = [
 const techStack = [
   {
     category: "Frontend",
-    items: ["HTML" , "JavaScript", "React.js"],
+    items: ["HTML", "JavaScript", "React.js"],
   },
   {
     category: "Mobile",
@@ -149,7 +149,7 @@ const projectlist = [
     image: "/images/blog3.png",
     link: "https://weather-app-five-silk-41.vercel.app/",
   },
-]
+];
 const socials = [
   {
     id: 1,
@@ -186,10 +186,282 @@ const socials = [
     bg: "#4bcb63",
     link: "https://kritikpoudel.com.np/",
   },
-
 ];
 
-export{navLinks,navIcons,dockApps,techStack,blogPosts,projectlist,socials}
+export {
+  navLinks,
+  navIcons,
+  dockApps,
+  techStack,
+  blogPosts,
+  projectlist,
+  socials,
+};
+
+const WORK_LOCATION = {
+  id: 1,
+  type: "work",
+  name: "Work",
+  icon: "/icons/work.svg",
+  kind: "folder",
+  children: [
+    // ▶ Project 1
+    {
+      id: 5,
+      name: "Resume Builder Website Application",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-5", // icon position inside Finder
+      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      children: [
+        {
+          id: 1,
+          name: "Resume Builder.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "A responsive and customizable Resume Builder web application built with React and TailwindCSS.",
+            "It allows users to input their personal details, education, experience, skills, and projects — and preview a formatted resume in real time. Users can also download their resume as a PDF or print it directly.",
+          ],
+        },
+        {
+          id: 2,
+          name: "ResumeBuilder.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://resume-builder-eta-two.vercel.app/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "ResumeBuilder.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-1.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 right-20",
+        },
+      ],
+    },
+
+    // ▶ Project 2
+    {
+      id: 6,
+      name: "Weather Application",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-52 right-80",
+      windowPosition: "top-[20vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "Weather App.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "A simple and user-friendly weather application that fetches real-time weather data for any city using a weather API.",
+          ],
+        },
+        {
+          id: 2,
+          name: "Weather.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://weather-app-five-silk-41.vercel.app/",
+          position: "top-20 left-20",
+        },
+        {
+          id: 4,
+          name: "Weather App.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/project-2.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 left-5",
+        },
+      ],
+    },
+
+    // ▶ Project 3
+    {
+      id: 7,
+      name: "Crypto Market",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "Crypto Market.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "A React-based cryptocurrency price tracker using the CoinGecko API.Track live cryptocurrency prices, visualize historical trends with charts, and convert between multiple currencies."
+          ],
+        },
+        {
+          id: 2,
+          name: "CryptoMarket.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://crypto-market-orcin.vercel.app/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "Crypto.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 right-20",
+        },
+      ],
+    },
+  ],
+};
+
+const ABOUT_LOCATION = {
+  id: 2,
+  type: "about",
+  name: "About me",
+  icon: "/icons/info.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "me.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-5",
+      imageUrl: "/images/kritik.jpeg",
+    },
+    {
+      id: 2,
+      name: "casual-me.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-28 right-72",
+      imageUrl: "/images/kritik-2.jpeg",
+    },
+    {
+      id: 3,
+      name: "conference-me.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 left-80",
+      imageUrl: "/images/kritik-3.jpeg",
+    },
+    {
+      id: 4,
+      name: "about-me.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-60 left-5",
+      subtitle: "Meet the Developer Behind the Code",
+      image: "/images/kritik.jpeg",
+      description: [
+       "I’m Kritik 👋, a front-end developer crafting smooth, modern, and user-friendly web interfaces with React and JavaScript.",
+       "I like clean UI, smart UX, and code that behaves on the first try (or at least pretends to). Everything else is negotiable."
+      ],
+    },
+  ],
+};
+
+const RESUME_LOCATION = {
+  id: 3,
+  type: "resume",
+  name: "Resume",
+  icon: "/icons/file.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Resume.pdf",
+      icon: "/images/pdf.png",
+      kind: "file",
+      fileType: "pdf",
+      // you can add `href` if you want to open a hosted resume
+      // href: "/your/resume/path.pdf",
+    },
+  ],
+};
+
+const TRASH_LOCATION = {
+  id: 4,
+  type: "trash",
+  name: "Trash",
+  icon: "/icons/trash.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "trash1.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-10",
+      imageUrl: "/images/trash-1.png",
+    },
+    {
+      id: 2,
+      name: "trash2.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-40 left-80",
+      imageUrl: "/images/trash-2.png",
+    },
+  ],
+};
+
+export const locations = {
+  work: WORK_LOCATION,
+  about: ABOUT_LOCATION,
+  resume: RESUME_LOCATION,
+  trash: TRASH_LOCATION,
+};
 
 const INITIAL_Z_INDEX = 1000;
 
