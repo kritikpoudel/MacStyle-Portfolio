@@ -13,6 +13,7 @@ const Contact = () => {
         <img src="/images/kritik-3.jpeg" alt="Kritik" className="w-24 h-24 object-cover rounded-full" />
         <h3>Let's Connect</h3>
         <p>Worst case, we both gain a new LinkedIn connection.</p>
+        <p>kritik.poudel02@gmail.com</p>
         <ul>
         {socials.map(({id,bg,link,icon,text})=>(
             <li key={id} style={{backgroundColor:bg}}>
